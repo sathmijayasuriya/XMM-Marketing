@@ -44,7 +44,8 @@ export default function AboutUS() {
                 sx={{color:"white",
                      fontSize:"11px",
                      padding: "0px 7px", 
-                     mb:"20px"
+                     mb:"20px",
+                     opacity: 0.7,
           }} />
             <Typography
               variant="h3"
