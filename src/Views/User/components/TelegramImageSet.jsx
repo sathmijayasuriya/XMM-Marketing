@@ -14,8 +14,15 @@ export default function TelegramImageSet() {
         <Button>
           Join Telegram
         </Button>
-        <AvatarGroup max={4}>
-          <Avatar alt="User 1" src={user1} />
+        <AvatarGroup   max={3}
+          sx={{
+            backgroundColor: '#744BFE',
+            '.MuiAvatar-root': {
+              border: 'none',  // Remove border
+              boxShadow: 'none',  // Remove shadow if any
+            }
+          }}>
+          <Avatar  alt="User 1" src={user1}  />
           <Avatar alt="User 2" src={user2} />
           <Avatar alt="User 3" src={user3} />
         </AvatarGroup>

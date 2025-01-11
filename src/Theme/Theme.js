@@ -38,8 +38,8 @@ const Theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: "27px", // Round shape
-          padding: "14px 30px", // Adjust padding
+          borderRadius: "29px", // Round shape
+          padding: "14px 35px", // Adjust padding
           background: "linear-gradient(91deg, #DD630D, #FFAA00)", // Gradient background
           color: "#FFFFFF", // White text color
           boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)", // Subtle shadow

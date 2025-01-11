@@ -39,7 +39,7 @@ export default function Header() {
             flex: 2,
             display: 'flex',
             justifyContent: 'center',
-            gap: 1,
+            // gap: 1,
           }}
         >
           <NavButton>Home</NavButton>

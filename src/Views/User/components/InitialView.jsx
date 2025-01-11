@@ -1,6 +1,8 @@
 import React from "react";
 import { Box, Typography, useTheme, Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import TelegramImageSet from "./TelegramImageSet";
+import xmmHero from '../../../assets/xmm-hero.png'
 
 export default function InitialView() {
   const theme = useTheme();
@@ -26,7 +28,7 @@ export default function InitialView() {
           justifyContent: "center",
         }}
       >
-        <Box sx={{ mx: 20 }}>
+        <Box sx={{ mx: 15 }}>
           <GradientTypography variant="h1">
             MARKETING MAKING
           </GradientTypography>
@@ -38,9 +40,18 @@ export default function InitialView() {
             XMM empowers businesses to create dynamic content, target specific demographics, 
             and optimize their digital presence.
           </Typography>
+        <   TelegramImageSet />
+        <Typography variant="h4" color="white" sx={{ mb: 3, opacity: 0.8,fontWeight:'600'}}>
+            OUR HAPPY CUSTOMERS
+          </Typography> 
+          <Box sx = {{width:"70%"}}> 
+          <Typography variant="h5" color="white" sx={{ mb: 3, opacity: 0.6,fontWeight:'450'}}>
+          Our happy customers are at the heart of everything we do
+          </Typography> 
           </Box>
-
+          </Box>
         </Box>
+        
       </Box>
     </>
   );
