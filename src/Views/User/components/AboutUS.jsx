@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography, Button,Chip } from "@mui/material";
 import aboutUsImage from "../../../assets/xmm-img1.png";
 import AboutSectionFeature from "./AboutSectionFeature";
 
@@ -38,6 +38,14 @@ export default function AboutUS() {
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
+          <Chip label="ABOUT US" 
+                variant="outlined" 
+                size="small"  
+                sx={{color:"white",
+                     fontSize:"11px",
+                     padding: "0px 7px", 
+                     mb:"20px"
+          }} />
             <Typography
               variant="h3"
               color="white"
@@ -63,7 +71,8 @@ export default function AboutUS() {
                 creative dynamic content target specific
               </Typography>
             </Box>
-            <AboutSectionFeature/>
+            <AboutSectionFeature />
+            <Button>Read Whitepaper</Button>
           </Grid>
         </Grid>
       </Box>
