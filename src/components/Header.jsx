@@ -29,7 +29,7 @@ export default function Header() {
     <Box
       sx={{
         backgroundColor: '#744BFE', // Ensures the entire root has the same background
-        padding: "0px 130px", // Simulate margin with padding
+        padding: "5px 195px 0px 195px", // Simulate margin with padding
       }}
     >
       <StyledAppBar

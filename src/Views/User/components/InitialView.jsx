@@ -12,6 +12,8 @@ export default function InitialView() {
     WebkitTextFillColor: "transparent",
     fontSize: "11rem",
     fontWeight: "1000",
+    letterSpacing: "-0.01em",
+
   }));
 
   return (
@@ -23,7 +25,7 @@ export default function InitialView() {
           pb: 10,
           alignItems: "center",
           display: "flex",
-          justifyContent: "left",
+          justifyContent: "center",
         }}
       >
         <Box sx={{ mx: 0, px: 0 }}> 
