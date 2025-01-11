@@ -20,16 +20,16 @@ const Theme = createTheme({
     },
   },
   typography: {
-    fontFamily: `'Kanit', 'Oswald', 'Helvetica Neue', sans-serif`,
+    // fontFamily: `'Kanit', 'Oswald', 'Helvetica Neue', sans-serif`,
     button: {
         fontFamily: `'Google Sans', 'Roboto', 'Arial', 'sans-serif'`, // Button-specific fonts
         // fontWeight: 400,
         textTransform: 'none', // Optional: Disable uppercase transformation
       },
-    h1: {
-      fontFamily: `'Google Sans', 'Roboto', 'Arial', 'sans-serif'`,
-      fontWeight: 700,
-    },
+      h6: {
+        fontFamily: `'Google Sans', 'Roboto', 'Arial', 'sans-serif'`, // Apply specific font to h6
+        opacity: 0.8,  // If you want the opacity applied here instead
+      },
   },
   shape: {
     borderRadius: 25,

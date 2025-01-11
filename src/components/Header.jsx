@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
   const StyledAppBar = styled(AppBar)({
-    backgroundColor: '#744BFE', // Modern dark theme color
+    backgroundColor: '#744BFE',
     boxShadow: 'none',
   });
   const NavButton = styled(Button)({

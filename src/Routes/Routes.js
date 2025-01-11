@@ -9,7 +9,8 @@ const router = createBrowserRouter([
     path: "/",
     element: <UserLayout />,
     children: [
-      { path: "/", element: <Landing /> },
+      { path: "/", 
+        element: <Landing /> },
       {
         path: "*",
         element: <Navigate to="/" replace />,

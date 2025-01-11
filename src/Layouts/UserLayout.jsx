@@ -7,7 +7,7 @@ export const UserLayout = () => {
   return (
     <>
       <Header />
-      <Grid2
+      {/* <Grid2
         // container
         direction="row"
         justifyContent="center"
@@ -18,7 +18,7 @@ export const UserLayout = () => {
           bgcolor: "background.default",
           m: "20px",
         }}
-      >
+      > */}
         <Box
           sx={{
             height: "100%",
@@ -26,7 +26,7 @@ export const UserLayout = () => {
         >
           <Outlet />
         </Box>
-      </Grid2>
+        {/* </Grid2> */}
     </>
   );
 };
