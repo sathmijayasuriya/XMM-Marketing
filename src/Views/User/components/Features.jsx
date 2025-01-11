@@ -14,8 +14,8 @@ export default function Features() {
           alignItems: "center",
           height: "auto",
           py: 5,
-          px: 15,
-          background: `linear-gradient(135deg, #01011B 70%, #2A1551 100%)`,
+        //   px: 23    ,
+        //   background: `linear-gradient(135deg, #01011B 70%, #2A1551 100%)`,
           flexDirection: "column", // Align everything in column direction
         }}
       >
@@ -52,18 +52,18 @@ export default function Features() {
           direction="row"
           wrap="nowrap"
         >
-          <Grid className="grid1" item xs={3}>
+          <Grid className="grid1" item xs={3.5}>
             <Typography
               variant="h3"
               color="white"
-              sx={{ opacity: 0.8, fontWeight: "600" }}
+              sx={{ opacity: 0.8 }}
             >
               Features Of X
             </Typography>
             <Typography
               variant="h3"
               color="white"
-              sx={{ mb: 3, opacity: 0.8, fontWeight: "600" }}
+              sx={{ mb: 3, opacity: 0.8 }}
             >
               MARKET MAKER
             </Typography>
@@ -71,7 +71,7 @@ export default function Features() {
               <Typography
                 variant="h6"
                 color="white"
-                sx={{ mb: 3, opacity: 0.8, fontWeight: "100", mt: 30 }}
+                sx={{ mb: 3, opacity: 0.8, mt: 30 }}
               >
                 X Market Maker offers a comprehensive set of features tailored
                 for market participants. Its core functionalities include
@@ -83,7 +83,7 @@ export default function Features() {
           <Grid
             className="grid2"
             item
-            xs={3}
+            xs={2.83}
             sx={{
               border: "0.1px solid rgba(255, 255, 255, 0.2)", // Semi-transparent white
               borderTop: "none",
@@ -97,14 +97,14 @@ export default function Features() {
               <Typography
                 variant="h6"
                 color="white"
-                sx={{ mb: 1, opacity: 0.8, fontWeight: "300" }}
+                sx={{ mb: 1, opacity: 0.8, }}
               >
                 01
               </Typography>
               <Typography
                 variant="h6"
                 color="white"
-                sx={{ mb: 20, opacity: 0.8, fontWeight: "300" }}
+                sx={{ mb: 20, opacity: 0.8,fontFamily: "'Helvetica Neue', sans-serif",fontWeight:"600" }}
               >
                 Benifits For Holders
               </Typography>
@@ -113,7 +113,7 @@ export default function Features() {
               <Typography
                 variant="h7"
                 color="white"
-                sx={{ mb: 1, opacity: 0.8, fontWeight: "300" }}
+                sx={{ mb: 1, opacity: 0.8}}
               >
                 We aim to increase the value of 
                 our currency to benefit our 
@@ -130,7 +130,7 @@ export default function Features() {
           <Grid
             className="grid3"
             item
-            xs={3}
+            xs={2.83}
             sx={{
               border: "0.1px solid rgba(255, 255, 255, 0.2)", // Semi-transparent white
               borderTop: "none",
@@ -140,14 +140,14 @@ export default function Features() {
               <Typography
                 variant="h6"
                 color="white"
-                sx={{ mb: 1, opacity: 0.8, fontWeight: "300" }}
+                sx={{ mb: 1, opacity: 0.8, }}
               >
                 02
               </Typography>
               <Typography
                 variant="h6"
                 color="white"
-                sx={{ mb: 20, opacity: 0.8, fontWeight: "300" }}
+                sx={{ mb: 20, opacity: 0.8,  }}
               >
                 Biggest Community
               </Typography>
@@ -156,7 +156,7 @@ export default function Features() {
               <Typography
                 variant="h7"
                 color="white"
-                sx={{ mb: 1, opacity: 0.8, fontWeight: "300" }}
+                sx={{ mb: 1, opacity: 0.8,  }}
               >
                 XMM is the First ever Crypto with 
                 the market making objective 
@@ -173,7 +173,7 @@ export default function Features() {
           <Grid
             className="grid4"
             item
-            xs={3}
+            xs={2.83}
             sx={{
               border: "0.1px solid rgba(255, 255, 255, 0.2)", // Semi-transparent white
               borderTop: "none",
@@ -183,14 +183,14 @@ export default function Features() {
               <Typography
                 variant="h6"
                 color="white"
-                sx={{ mb: 1, opacity: 0.8, fontWeight: "300" }}
+                sx={{ mb: 1, opacity: 0.8,  }}
               >
                 03
               </Typography>
               <Typography
                 variant="h6"
                 color="white"
-                sx={{ mb: 20, opacity: 0.8, fontWeight: "300" }}
+                sx={{ mb: 20, opacity: 0.8,}}
               >
                 Ecosystem-Redefined
               </Typography>
@@ -199,7 +199,7 @@ export default function Features() {
               <Typography
                 variant="h7"
                 color="white"
-                sx={{ mb: 1, opacity: 0.8, fontWeight: "300" }}
+                sx={{ mb: 1, opacity: 0.8,  }}
               >
                 Our powerful token will protect 
                 our holders from the turbulence 

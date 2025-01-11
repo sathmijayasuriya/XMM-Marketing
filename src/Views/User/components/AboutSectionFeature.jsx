@@ -27,7 +27,9 @@ export default function AboutSectionFeature() {
           <Typography
             variant="h6"
             color="white"
-            sx={{ opacity: 0.8, fontWeight: 300 }}
+            sx={{ opacity: 0.8, 
+                // fontWeight: 300 
+              }}
           >
             {feature}
           </Typography>

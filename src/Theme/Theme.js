@@ -20,16 +20,24 @@ const Theme = createTheme({
     },
   },
   typography: {
-    // fontFamily: `'Kanit', 'Oswald', 'Helvetica Neue', sans-serif`,
+    fontFamily: "'Helvetica Neue', sans-serif", // Global font family
     button: {
-        fontFamily: `'Google Sans', 'Roboto', 'Arial', 'sans-serif'`, // Button-specific fonts
-        // fontWeight: 400,
-        textTransform: 'none', // Optional: Disable uppercase transformation
+      fontFamily: "'Google Sans', 'Roboto', 'Arial', sans-serif", // Button-specific fonts
+      textTransform: "none", // Optional: Disable uppercase transformation
+    },
+    h6: {
+      fontFamily: "'Google Sans', 'Roboto', 'Arial', sans-serif", // Apply multiple fonts to h6
+      fontWeight:"100"
+    },
+    h5: {
+        fontFamily: "'Google Sans', 'Roboto', 'Arial', sans-serif", // Apply multiple fonts to h6
+        fontWeight:"100"
       },
-      h6: {
-        fontFamily: `'Google Sans', 'Roboto', 'Arial', 'sans-serif'`, // Apply specific font to h6
-        opacity: 0.8,  // If you want the opacity applied here instead
+      h4: {
+        fontFamily: "'Google Sans', 'Roboto', 'Arial', sans-serif", // Apply multiple fonts to h6
+        fontWeight:"500"
       },
+      
   },
   shape: {
     borderRadius: 25,
@@ -57,8 +65,14 @@ const Theme = createTheme({
         },
       },
     },
-
-
+    MuiChip: {
+      styleOverrides: {
+        root: {
+          fontFamily: "'Roboto', sans-serif", // Change font to Roboto for better thin variants
+          fontWeight: "100", // Extra-light font weight for ultra-thin text
+        },
+      },
+    },
   },
 });
 
