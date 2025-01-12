@@ -85,9 +85,20 @@ export default function Features() {
             item
             xs={2.83}
             sx={{
-              border: "0.1px solid rgba(255, 255, 255, 0.2)", // Semi-transparent white
-              borderTop: "none",
-            }}
+                position: "relative",
+                border: "0.1px solid rgba(255, 255, 255, 0.2)", // Regular border for the grid
+                borderTop: "none",
+                "&::before": {
+                  content: '""',
+                  position: "absolute",
+                  top: "50%", // Start in the middle vertically
+                  left: "-1.9px", // Slightly shift right for alignment
+                  transform: "translateY(-50%)", // Center align vertically
+                  height: "5%", // Thickness height (adjust to your design)
+                  width: "3px", // Thickness width
+                  backgroundColor: "rgba(255, 255, 255, 0.4)", // Thicker, more opaque color
+                },
+              }}
           >
             <Box
               sx={{
@@ -104,7 +115,7 @@ export default function Features() {
               <Typography
                 variant="h6"
                 color="white"
-                sx={{ mb: 20, opacity: 0.8,fontFamily: "'Helvetica Neue', sans-serif",fontWeight:"600" }}
+                sx={{ mb: 20, opacity: 0.8,fontWeight:"600" }}
               >
                 Benifits For Holders
               </Typography>
@@ -132,9 +143,20 @@ export default function Features() {
             item
             xs={2.83}
             sx={{
-              border: "0.1px solid rgba(255, 255, 255, 0.2)", // Semi-transparent white
-              borderTop: "none",
-            }}
+                position: "relative",
+                border: "0.1px solid rgba(255, 255, 255, 0.2)", // Regular border for the grid
+                borderTop: "none",
+                "&::before": {
+                  content: '""',
+                  position: "absolute",
+                  top: "50%", // Start in the middle vertically
+                  left: "-1.9px", // Slightly shift right for alignment
+                  transform: "translateY(-50%)", // Center align vertically
+                  height: "5%", // Thickness height (adjust to your design)
+                  width: "3px", // Thickness width
+                  backgroundColor: "rgba(255, 255, 255, 0.4)", // Thicker, more opaque color
+                },
+              }}
           >
             <Box sx={{ width: "100%" }}>
               <Typography
@@ -147,7 +169,7 @@ export default function Features() {
               <Typography
                 variant="h6"
                 color="white"
-                sx={{ mb: 20, opacity: 0.8,  }}
+                sx={{ mb: 20, opacity: 0.8,fontWeight:"600"   }}
               >
                 Biggest Community
               </Typography>
@@ -175,9 +197,20 @@ export default function Features() {
             item
             xs={2.83}
             sx={{
-              border: "0.1px solid rgba(255, 255, 255, 0.2)", // Semi-transparent white
-              borderTop: "none",
-            }}
+                position: "relative",
+                border: "0.1px solid rgba(255, 255, 255, 0.2)", // Regular border for the grid
+                borderTop: "none",
+                "&::before": {
+                  content: '""',
+                  position: "absolute",
+                  top: "50%", // Start in the middle vertically
+                  left: "-1.9px", // Slightly shift right for alignment
+                  transform: "translateY(-50%)", // Center align vertically
+                  height: "5%", // Thickness height (adjust to your design)
+                  width: "3px", // Thickness width
+                  backgroundColor: "rgba(255, 255, 255, 0.4)", // Thicker, more opaque color
+                },
+              }}
           >
             <Box sx={{ width: "100%" }}>
               <Typography
@@ -190,7 +223,7 @@ export default function Features() {
               <Typography
                 variant="h6"
                 color="white"
-                sx={{ mb: 20, opacity: 0.8,}}
+                sx={{ mb: 20, opacity: 0.8,fontWeight:"600"}}
               >
                 Ecosystem-Redefined
               </Typography>
