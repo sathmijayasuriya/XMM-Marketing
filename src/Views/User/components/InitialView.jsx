@@ -10,18 +10,24 @@ export default function InitialView() {
   const theme = useTheme();
 
   const GradientTypography = styled(Typography)(({ theme }) => ({
-    background:
-      "linear-gradient(45deg, #fff 50%, rgba(197, 190, 190, 0.8) 90%)",
+    background: "linear-gradient(45deg, #fff 50%, rgba(197, 190, 190, 0.8) 90%)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
     fontSize: "11rem",
     fontWeight: "1000",
     letterSpacing: "-0.01em",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "6rem", // Adjust for small screens
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "5rem", // Adjust further for extra small screens
+    },
   }));
 
   return (
     <Box
       sx={{
+        width: "auto",
         backgroundColor: "#744BFE",
         pt: 7,
         pb: 10,
@@ -30,16 +36,20 @@ export default function InitialView() {
         justifyContent: "center",
         position: "relative", // Ensure the section is positioned
         zIndex: 0, // Lower z-index for the section content
+        [theme.breakpoints.down("sm")]: {
+          pt: 5, // Adjust padding for smaller screens
+          pb: 6, // Adjust padding for smaller screens
+        },
       }}
     >
       <Box sx={{ mx: 0, px: 0 }}>
         <GradientTypography variant="h1">MARKETING MAKING</GradientTypography>
-        <Grid container>
-          <Grid item xs={7}>
+        <Grid container spacing={3}>
+          <Grid item xs={12} md={7}>
             <GradientTypography variant="h1" gutterBottom>
               WITH XMM.
             </GradientTypography>
-            <Box sx={{ width: "70%", mx: 0, px: 0 }}>
+            <Box sx={{ width: "100%", mx: 0, px: 0 }}>
               <Typography variant="h6" color="white" sx={{ mb: 3 }}>
                 XMM empowers businesses to create dynamic content, target
                 specific demographics, and optimize their digital presence.
@@ -48,20 +58,23 @@ export default function InitialView() {
               <Typography variant="h4" color="white" sx={{ mb: 3 }}>
                 OUR HAPPY CUSTOMERS
               </Typography>
-              <Box sx={{ width: "70%", mx: 0, px: 0 }}>
+              <Box sx={{ width: "100%", mx: 0, px: 0 }}>
                 <Typography variant="h5" color="white" sx={{ mb: 3 }}>
                   Our happy customers are at the heart of everything we do
                 </Typography>
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={5}>
-            <Box sx={{mb:"10px"}}>
-            <img
-              src={xmmHero}
-              alt="Frame"
-              style={{ width: "100%", height: "auto" }}
-            />
+          <Grid item xs={12} md={5}>
+            <Box sx={{ mb: "10px", width: "100%" }}>
+              <img
+                src={xmmHero}
+                alt="Frame"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
             </Box>
           </Grid>
         </Grid>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, CssBaseline, Grid2 } from "@mui/material";
+import { Box, Grid2 } from "@mui/material";
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 
@@ -8,22 +8,17 @@ export const UserLayout = () => {
     <>
       <Header />
       <Grid2
-        // container
         direction="row"
         justifyContent="center"
         alignItems="stretch"
         sx={{
           height: "100%",
           minHeight: "calc(100vh - 60px)",
-          m: "0px 200px  0px 200px",
-          // padding:"20px"
+          m: 0, // Remove global margin
+          padding: 0, // No global padding
         }}
       >
-        <Box
-          sx={{
-            height: "100%",
-          }}
-        >
+        <Box sx={{ height: "100%" }}>
           <Outlet />
         </Box>
       </Grid2>

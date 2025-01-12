@@ -3,7 +3,6 @@ import InitialView from "./components/InitialView";
 import AboutUS from "./components/AboutUS";
 import Features from "./components/Features";
 import { Box } from "@mui/material";
-import arrowImage from '../../assets/arrow.png'
 
 export const Landing = () => {
   return (
@@ -12,8 +11,8 @@ export const Landing = () => {
       <Box
         sx={{
           backgroundColor: "#744BFE",
-          mx: "-200px", // Counter the layout's margin
-          px: "200px",  // Reapply padding to keep content aligned
+          mx: 0, // Remove large margin
+          px: { xs: "20px", sm: "200px" },  // Padding adjusted for small screens
         }}
       >
         <InitialView />
@@ -22,8 +21,8 @@ export const Landing = () => {
       <Box
         sx={{
           background: `linear-gradient(130deg, #01011B 40%, #2A1551 90%)`,
-          mx: "-200px",
-          px: "200px",  
+          mx: 0, // Remove large margin
+          px: { xs: "20px", sm: "200px" },  // Padding adjusted for small screens
         }}
       >
         <AboutUS />
