@@ -23,18 +23,21 @@ const Theme = createTheme({
     fontFamily: "'Helvetica Neue', sans-serif", // Global font family
     button: {
       fontFamily: "'Google Sans', 'Roboto', 'Arial', sans-serif", // Button-specific fonts
-      textTransform: "none", // Optional: Disable uppercase transformation
+      textTransform: "none", 
     },
     h6: {
-      fontFamily: "'Google Sans', 'Roboto', 'Arial', sans-serif", // Apply multiple fonts to h6
-      fontWeight:"100"
+      fontFamily: "'Google Sans', 'Roboto', 'Arial', sans-serif", 
+      fontWeight:"lighter"
     },
     h5: {
-        fontFamily: "'Google Sans', 'Roboto', 'Arial', sans-serif", // Apply multiple fonts to h6
+        fontFamily: "'Google Sans', 'Roboto', 'Arial', sans-serif",
         fontWeight:"100"
       },
       h4: {
-        fontFamily: "'Google Sans', 'Roboto', 'Arial', sans-serif", // Apply multiple fonts to h6
+        fontFamily: "'Google Sans', 'Roboto', 'Arial', sans-serif", 
+        fontWeight:"500"
+      },
+      h2: {
         fontWeight:"500"
       },
       
@@ -55,6 +58,7 @@ const Theme = createTheme({
           "&:hover": {
             background: "linear-gradient(90deg, #FFAA00, #DD630D)", // Hover gradient reversal
           },
+          fontSize:"20px",
           outlined: {
             background: "none",
             color: "#FFFFFF",

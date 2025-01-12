@@ -13,10 +13,8 @@ export default function Features() {
           justifyContent: "center",
           alignItems: "center",
           height: "auto",
-          py: 5,
-        //   px: 23    ,
-        //   background: `linear-gradient(135deg, #01011B 70%, #2A1551 100%)`,
-          flexDirection: "column", // Align everything in column direction
+          py: 10,
+          flexDirection: "column",
         }}
       >
         {/* Chip Section */}
@@ -37,7 +35,7 @@ export default function Features() {
               fontSize: "11px",
               padding: "0px 7px",
               opacity: 0.7,
-              alignSelf: "flex-start", // Align Chip to the left
+              alignSelf: "flex-start",
             }}
           />
         </Box>
@@ -52,16 +50,17 @@ export default function Features() {
           direction="row"
           wrap="nowrap"
         >
-          <Grid className="grid1" item xs={3.5}>
+          {/* First Grid Item */}
+          <Grid className="grid1" item xs={4}>
             <Typography
-              variant="h3"
+              variant="h2"
               color="white"
               sx={{ opacity: 0.8 }}
             >
               Features Of X
             </Typography>
             <Typography
-              variant="h3"
+              variant="h2"
               color="white"
               sx={{ mb: 3, opacity: 0.8 }}
             >
@@ -69,9 +68,9 @@ export default function Features() {
             </Typography>
             <Box sx={{ width: "63%" }}>
               <Typography
-                variant="h6"
+                variant="h5"
                 color="white"
-                sx={{ mb: 3, opacity: 0.8, mt: 30 }}
+                sx={{ mb: 3, opacity: 0.8, mt: 25 }}
               >
                 X Market Maker offers a comprehensive set of features tailored
                 for market participants. Its core functionalities include
@@ -80,170 +79,75 @@ export default function Features() {
             </Box>
           </Grid>
 
-          <Grid
-            className="grid2"
-            item
-            xs={2.83}
-            sx={{
-                position: "relative",
-                border: "0.1px solid rgba(255, 255, 255, 0.2)", // Regular border for the grid
-                borderTop: "none",
-                "&::before": {
-                  content: '""',
-                  position: "absolute",
-                  top: "50%", // Start in the middle vertically
-                  left: "-1.9px", // Slightly shift right for alignment
-                  transform: "translateY(-50%)", // Center align vertically
-                  height: "5%", // Thickness height (adjust to your design)
-                  width: "3px", // Thickness width
-                  backgroundColor: "rgba(255, 255, 255, 0.4)", // Thicker, more opaque color
-                },
-              }}
-          >
-            <Box
+          {/* Other Grid Items */}
+          {[{
+            id: "01",
+            title: "Benefits For Holders",
+            description: `We aim to increase the value of our currency to benefit our community. Market Making will be key focus.`,
+            imgSrc: featureIcon1,
+          }, {
+            id: "02",
+            title: "Biggest Community",
+            description: `XMM is the First ever Crypto with the market making objective that's being worked upon at such amazing level!`,
+            imgSrc: featureIcon2,
+          }, {
+            id: "03",
+            title: "Ecosystem-Redefined",
+            description: `Our powerful token will protect our holders from the turbulence of the crypto market.`,
+            imgSrc: featureIcon3,
+          }].map((feature, index) => (
+            <Grid
+              key={index}
+              className={`grid${index + 2}`}
+              item
+              xs={2.67}
               sx={{
-                width: "100%",
-              }}
-            >
-              <Typography
-                variant="h6"
-                color="white"
-                sx={{ mb: 1, opacity: 0.8, }}
-              >
-                01
-              </Typography>
-              <Typography
-                variant="h6"
-                color="white"
-                sx={{ mb: 20, opacity: 0.8,fontWeight:"600" }}
-              >
-                Benifits For Holders
-              </Typography>
-              <img src={featureIcon1} alt="ecosystem" />
-              <Box sx={{ width: "100%" }}>
-              <Typography
-                variant="h7"
-                color="white"
-                sx={{ mb: 1, opacity: 0.8}}
-              >
-                We aim to increase the value of 
-                our currency to benefit our 
-                community. Market Making will 
-                be key focus. We aim to increase 
-                the value of our currency to 
-                benefit our community.
-              </Typography>
-
-            </Box>  
-            </Box>
-          </Grid>
-
-          <Grid
-            className="grid3"
-            item
-            xs={2.83}
-            sx={{
                 position: "relative",
-                border: "0.1px solid rgba(255, 255, 255, 0.2)", // Regular border for the grid
+                border: "0.1px solid rgba(255, 255, 255, 0.2)",
                 borderTop: "none",
-                "&::before": {
-                  content: '""',
-                  position: "absolute",
-                  top: "50%", // Start in the middle vertically
-                  left: "-1.9px", // Slightly shift right for alignment
-                  transform: "translateY(-50%)", // Center align vertically
-                  height: "5%", // Thickness height (adjust to your design)
-                  width: "3px", // Thickness width
-                  backgroundColor: "rgba(255, 255, 255, 0.4)", // Thicker, more opaque color
+                "&::after": {
+                    content: '""',
+                    position: "absolute",
+                    top: "50%", // Start in the middle vertically
+                    left: "-1.5px", // Slightly shift left for alignment
+                    transform: "translateY(-50%)", // Center align vertically
+                    height: "5%", // Thickness height (adjust to your design)
+                    width: "3px", // Thickness width
+                    backgroundColor: "rgba(255, 255, 255, 0.4)", // Thicker, more opaque color
+                  },
+                "&:hover": {
+                  borderTop: "0.1px solid rgba(255, 255, 255, 0.2)", // Thicker top border on hover
                 },
               }}
-          >
-            <Box sx={{ width: "100%" }}>
-              <Typography
-                variant="h6"
-                color="white"
-                sx={{ mb: 1, opacity: 0.8, }}
-              >
-                02
-              </Typography>
-              <Typography
-                variant="h6"
-                color="white"
-                sx={{ mb: 20, opacity: 0.8,fontWeight:"600"   }}
-              >
-                Biggest Community
-              </Typography>
-              <img src={featureIcon2} alt="ecosystem" />
+            >   
               <Box sx={{ width: "100%" }}>
-              <Typography
-                variant="h7"
-                color="white"
-                sx={{ mb: 1, opacity: 0.8,  }}
-              >
-                XMM is the First ever Crypto with 
-                the market making objective 
-                that's being worked upon 
-                at such amazing level! We will 
-                focus on community building 
-                a lot for that.
-              </Typography>
-
-            </Box>  
-            </Box>
-          </Grid>
-
-          <Grid
-            className="grid4"
-            item
-            xs={2.83}
-            sx={{
-                position: "relative",
-                border: "0.1px solid rgba(255, 255, 255, 0.2)", // Regular border for the grid
-                borderTop: "none",
-                "&::before": {
-                  content: '""',
-                  position: "absolute",
-                  top: "50%", // Start in the middle vertically
-                  left: "-1.9px", // Slightly shift right for alignment
-                  transform: "translateY(-50%)", // Center align vertically
-                  height: "5%", // Thickness height (adjust to your design)
-                  width: "3px", // Thickness width
-                  backgroundColor: "rgba(255, 255, 255, 0.4)", // Thicker, more opaque color
-                },
-              }}
-          >
-            <Box sx={{ width: "100%" }}>
-              <Typography
-                variant="h6"
-                color="white"
-                sx={{ mb: 1, opacity: 0.8,  }}
-              >
-                03
-              </Typography>
-              <Typography
-                variant="h6"
-                color="white"
-                sx={{ mb: 20, opacity: 0.8,fontWeight:"600"}}
-              >
-                Ecosystem-Redefined
-              </Typography>
-              <img src={featureIcon3} alt="ecosystem" />
-              <Box sx={{ width: "100%" }}>
-              <Typography
-                variant="h7"
-                color="white"
-                sx={{ mb: 1, opacity: 0.8,  }}
-              >
-                Our powerful token will protect 
-                our holders from the turbulence 
-                of the crypto market and help 
-                them hold despite the 
-                uncertainty of the market.
-              </Typography>
-
-            </Box>  
-            </Box>
-          </Grid>
+                <Typography
+                  variant="h6"
+                  color="white"
+                  sx={{ mb: 1, opacity: 0.8 }}
+                >
+                  {feature.id}
+                </Typography>
+                <Typography
+                  variant="h5"
+                  color="white"
+                  sx={{ mb: 20, opacity: 0.8, fontWeight: "600" }}
+                >
+                  {feature.title}
+                </Typography>
+                <img src={feature.imgSrc} alt={feature.title} />
+                <Box sx={{ width: "100%" }}>
+                  <Typography
+                    variant="h6"
+                    color="white"
+                    sx={{ mb: 1, opacity: 0.8 ,width : "90%"}}
+                  >
+                    {feature.description}
+                  </Typography>
+                </Box>
+              </Box>
+            </Grid>
+          ))}
         </Grid>
       </Box>
     </>

@@ -14,8 +14,8 @@ export const UserLayout = () => {
         alignItems="stretch"
         sx={{
           height: "100%",
-          minHeight: "calc(100vh - 64px)",
-          m: "0px 170px  0px 170px",
+          minHeight: "calc(100vh - 60px)",
+          m: "0px 200px  0px 200px",
           // padding:"20px"
         }}
       >

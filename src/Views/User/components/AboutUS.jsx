@@ -48,16 +48,15 @@ export default function AboutUS() {
                      opacity: 0.7,
           }} />
             <Typography
-              variant="h3"
+              variant="h2"
               color="white"
               sx={{ opacity: 0.8, 
-                // fontWeight: "600" 
               }}
             >
               Best Ever Token Designed
             </Typography>
             <Typography
-              variant="h3"
+              variant="h2"
               color="white"
               sx={{ mb: 3, opacity: 0.8, 
                     // fontWeight: "600"
