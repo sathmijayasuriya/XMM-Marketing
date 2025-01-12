@@ -29,18 +29,54 @@ export default function Header() {
     backgroundColor: '#744BFE',
     boxShadow: 'none',
   });
-
-  const NavButton = styled(Button)({
+  const NavButton = styled(Button)({ 
     background: 'none',
     fontSize: '18px',
     color: '#FFFFFF',
     border: 'none',
     boxShadow: 'none',
     textTransform: 'none',
+    position: 'relative', // Ensure the pseudo-elements are positioned correctly
     '&:hover': {
-      background: 'rgba(255, 255, 255, 0.1)',
+      background: 'none',
+    },
+    '&:after': {
+      content: '""',
+      position: 'absolute',
+      bottom: 0, // Position the line at the bottom of the button
+      left: '0',
+      width: '100%', // Line spans the full width of the button
+      height: '2px',
+      backgroundColor: '#FFFFFF', // Line color
+      transition: 'width 0.3s ease', // Smooth transition for the line
+    },
+    '&:hover:after': {
+      width: '100%', // Line expands fully on hover (it's already at 100%, so no change needed)
+    },
+    '&:before': {
+      content: '""',
+      position: 'absolute',
+      bottom: '0', // Position triangle directly on top of the line
+      left: '50%',
+      transform: 'translateX(-50%) rotate(360deg)', // Triangle points up at the top of the line
+      width: 0,
+      height: 0,
+      borderLeft: '12px solid transparent', // Increase size of the triangle (left side)
+      borderRight: '12px solid transparent', // Increase size of the triangle (right side)
+      borderBottom: '12px solid #FFFFFF', // Increase size of the triangle (bottom)
+      opacity: 0, // Initially hidden
+      transition: 'opacity 0.3s ease', // Smooth appearance
+    },
+    '&:hover:before': {
+      opacity: 1, // Triangle appears on hover
     },
   });
+  
+  
+
+  
+  
+  
 
   useEffect(() => {
     // Close the menu when screen size is large enough
