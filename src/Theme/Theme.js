@@ -22,7 +22,7 @@ const Theme = createTheme({
   typography: {
     fontFamily: "'Helvetica Neue', sans-serif", // Global font family
     button: {
-      fontFamily: "'Google Sans', 'Roboto', 'Arial', sans-serif", // Button-specific fonts
+      fontFamily: "'Google Sans', 'Roboto', 'Arial', sans-serif",
       textTransform: "none", 
     },
     h6: {
@@ -49,11 +49,11 @@ const Theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: "29px", // Round shape
-          padding: "14px 35px", // Adjust padding
+          borderRadius: "29px", 
+          padding: "14px 35px",
           background: "linear-gradient(91deg, #DD630D, #FFAA00)", // Gradient background
-          color: "#FFFFFF", // White text color
-          boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)", // Subtle shadow
+          color: "#FFFFFF", 
+          boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)", 
           textAlign: "center",
           "&:hover": {
             background: "linear-gradient(90deg, #FFAA00, #DD630D)", // Hover gradient reversal
@@ -72,8 +72,8 @@ const Theme = createTheme({
     MuiChip: {
       styleOverrides: {
         root: {
-          fontFamily: "'Roboto', sans-serif", // Change font to Roboto for better thin variants
-          fontWeight: "100", // Extra-light font weight for ultra-thin text
+          fontFamily: "'Roboto', sans-serif", 
+          fontWeight: "100", 
         },
       },
     },

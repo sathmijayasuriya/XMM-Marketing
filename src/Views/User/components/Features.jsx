@@ -47,11 +47,22 @@ export default function Features() {
           spacing={2}
           justifyContent="center"
           alignItems="stretch"
-          direction="row"
+          direction={{ xs: "column", md: "row" }} // Stacks on small screens, row on medium+
           wrap="nowrap"
         >
           {/* First Grid Item */}
-          <Grid className="grid1" item xs={4}>
+          <Grid
+            className="grid1"
+            item
+            xs={12}
+            md={4}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "flex-start",
+            }}
+          >
             <Typography variant="h2" color="white" sx={{ opacity: 0.8 }}>
               Features Of X
             </Typography>
@@ -76,49 +87,53 @@ export default function Features() {
             {
               id: "01",
               title: "Benefits For Holders",
-              description: `We aim to increase the value of our currency to benefit our community. Market Making will be key focus.`,
+              description:
+                "We aim to increase the value of our currency to benefit our community. Market Making will be key focus.",
               imgSrc: featureIcon1,
             },
             {
               id: "02",
               title: "Biggest Community",
-              description: `XMM is the First ever Crypto with the market making objective that's being worked upon at such amazing level!`,
+              description:
+                "XMM is the First ever Crypto with the market making objective that's being worked upon at such amazing level!",
               imgSrc: featureIcon2,
             },
             {
               id: "03",
               title: "Ecosystem-Redefined",
-              description: `Our powerful token will protect our holders from the turbulence of the crypto market.`,
+              description:
+                "Our powerful token will protect our holders from the turbulence of the crypto market.",
               imgSrc: featureIcon3,
             },
           ].map((feature, index) => (
             <Grid
-  key={index}
-  className={`grid${index + 2}`}
-  item
-  xs={2.67}
-  sx={{
-    position: "relative",
-    border: "0.1px solid rgba(255, 255, 255, 0.2)",
-    borderTop: "none",
-    "&::after": {
-      content: '""',
-      position: "absolute",
-      top: "50%", // Start in the middle vertically
-      left: "-1.5px", // Slightly shift left for alignment
-      transform: "translateY(-50%)", // Center align vertically
-      height: "5%", // Thickness height (adjust to your design)
-      width: "3px", // Thickness width
-      backgroundColor: "rgba(255, 255, 255, 0.3)", // Thicker, more opaque color
-},
-    "&:nth-of-type(3)": {
-        background: `linear-gradient(20deg, #01011B 1%, #2A1551 90%)`,
-        backgroundSize: "100% 100%", // Small size for the hover effect
-        backgroundPosition: "bottom", // Start the gradient from the top
-        backgroundRepeat: "no-repeat", // Don't repeat the gradient
-    },
-  }}
->
+              key={index}
+              className={`grid${index + 2}`}
+              item
+              xs={12}
+              md={2.67}
+              sx={{
+                position: "relative",
+                border: "0.1px solid rgba(255, 255, 255, 0.2)",
+                borderTop: "none",
+                "&::after": {
+                  content: '""',
+                  position: "absolute",
+                  top: "50%",
+                  left: "-1.5px",
+                  transform: "translateY(-50%)",
+                  height: "5%",
+                  width: "3px",
+                  backgroundColor: "rgba(255, 255, 255, 0.3)",
+                },
+                "&:nth-of-type(3)": {
+                  background: "linear-gradient(20deg, #01011B 1%, #2A1551 90%)",
+                  backgroundSize: "100% 100%",
+                  backgroundPosition: "bottom",
+                  backgroundRepeat: "no-repeat",
+                },
+              }}
+            >
               <Box sx={{ width: "100%" }}>
                 <Typography
                   variant="h6"
