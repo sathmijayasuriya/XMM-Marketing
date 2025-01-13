@@ -31,7 +31,7 @@ export default function Header() {
   });
   const NavButton = styled(Button)({ 
     background: 'none',
-    fontSize: '18px',
+    fontSize: '18px ',
     color: '#FFFFFF',
     border: 'none',
     boxShadow: 'none',
@@ -45,7 +45,8 @@ export default function Header() {
       position: 'absolute',
       bottom: 0, // Position the line at the bottom of the button
       left: '0',
-      width: '100%', // Line spans the full width of the button
+      width: '100%', // Lin+
+      // e spans the full width of the button
       height: '2px',
       backgroundColor: '#FFFFFF', // Line color
       transition: 'width 0.3s ease', // Smooth transition for the line
@@ -71,10 +72,6 @@ export default function Header() {
       opacity: 1, // Triangle appears on hover
     },
   });
-  
-  
-
-  
   
   
 
